@@ -12,3 +12,4 @@ Casa Dorelia webpage
 - [ ] Colocar imagens e descrição dos itens
 - [ ] Persitencia do carrinho no local storage
 - [ ] Envio do carrinho por wpp
+- [ ] fav icon

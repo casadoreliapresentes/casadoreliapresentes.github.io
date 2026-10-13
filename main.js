@@ -31,7 +31,20 @@ const products = [
     }
 ];
 
+const CART_STORAGE_KEY = "casadorelia-cart";
 let cart = [];
+
+try {
+    const storedCart = JSON.parse(sessionStorage.getItem(CART_STORAGE_KEY) || "[]");
+    if (Array.isArray(storedCart)) {
+        cart = storedCart.filter(item =>
+            item && products.some(product => product.id === item.productId) &&
+            Number.isInteger(item.quantity) && item.quantity > 0
+        );
+    }
+} catch {
+    sessionStorage.removeItem(CART_STORAGE_KEY);
+}
 
 const money = value =>
     value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
@@ -149,6 +162,7 @@ function renderCart() {
 
     cartCountEl.textContent = totalQuantity;
     subtotalEl.textContent = money(subtotal);
+    sessionStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
 }
 
 document.getElementById("cartToggle").addEventListener("click", () => {
