@@ -1,0 +1,28 @@
+{
+  "name": "casadoreliapresentes.github.io",
+  "version": "1.0.0",
+  "description": "Casa Dorelia Web site",
+  "homepage": "https://github.com/casadoreliapresentes/casadoreliapresentes.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/casadoreliapresentes/casadoreliapresentes.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casadoreliapresentes/casadoreliapresentes.github.io.git"
+  },
+  "license": "ISC",
+  "author": "gabrielburich",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "build:html": "html-minifier-terser index.html --output dist/index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
+    "build:css": "cleancss -o dist/main.css main.css",
+    "build:js": "terser main.js --compress --mangle --output dist/main.js",
+    "build": "npm run build:html && npm run build:js && npm run build:css"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.4.2",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.51.2"
+  }
+}

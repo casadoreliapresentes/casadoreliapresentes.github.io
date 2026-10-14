@@ -9,7 +9,9 @@ Casa Dorelia webpage
 - [x] Ajustar diagramação mobile (steps)
 - [x] colocar classe atual como active (ou remover)
 - [x] Ajustar links para abrir em nova aba
-- [ ] Colocar imagens e descrição dos itens
-- [ ] Persitencia do carrinho no local storage
+- [x] Colocar imagens e descrição dos itens
+- [x] Persitencia do carrinho no local storage
 - [ ] Envio do carrinho por wpp
-- [ ] fav icon
+- [x] Colocar foto dos itens no carrinho
+- [x] fav icon
+- [x] build

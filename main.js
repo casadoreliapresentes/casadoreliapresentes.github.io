@@ -2,32 +2,145 @@ const products = [
     {
     id: 1,
     name: "Café Pausa",
-    description: "Para um momento de pausa, carinho e sabor.",
-    price: 49.90
+    description: "Uma pausa gostosa para presentear, acolher e deixar o dia mais especial.",
+    price: 79.90,
+    photos: ["img/cafe-pausa1.webp", "img/cafe-pausa2.webp"],
+    extendedDescription: {
+        heading: "A caixa acompanha:",
+        items: [
+            "1 caneca",
+            "1 Drip Coffee ou 1 cappuccino — você escolhe",
+            "2 mini Trentos, dispostos em um saquinho de juta",
+            "1 pacotinho de biscoitos artesanais da Casa Dorelia ou bolo caseiro individual",
+            "1 Ouro Branco",
+            "1 cartão personalizado com o seu recado"
+        ],
+        closing: "Tudo é cuidadosamente acomodado em uma caixa de MDF, finalizada com um laço e pronta para presentear.",
+        note: "Sabores sob consulta."
+    }
     },
     {
     id: 2,
     name: "Café Aconchego",
-    description: "Aquele gostinho de casa, em forma de presente.",
-    price: 49.90
+    description: "Um presente pensado para criar um momento especial.",
+    price: 99.90,
+    photos: ["img/cafe-aconchego.webp"],
+    extendedDescription: {
+        heading: "A caixa acompanha:",
+        items: [
+            "1 bolo caseiro — consulte os sabores disponíveis",
+            "1 caneca",
+            "1 Drip Coffee ou 1 cappuccino — você escolhe",
+            "1 pacotinho de biscoitos artesanais da Casa Dorelia",
+            "2 Ouro Branco",
+            "1 cartão personalizado com o seu recado"
+        ],
+        closing: "Tudo é cuidadosamente preparado em uma caixa especial, finalizada com um laço e pronta para presentear."
+    }
     },
     {
     id: 3,
-    name: "Café Encanto",
-    description: "Doce, leve e cheio de boas energias.",
-    price: 54.90
+    name: "Café Celebração",
+    description: "Uma experiência pensada para celebrar momentos que merecem ser lembrados.",
+    price: 159.90,
+    photos: ["img/cafe-celebracao.webp"],
+    extendedDescription: {
+        heading: "Nossa composição reúne:",
+        items: [
+            "Croissant",
+            "Pães de queijo",
+            "Ferrero Rocher",
+            "Bolo artesanal servido em uma caneca especial — consultar sabores",
+            "Cappuccino em saquinho de juta",
+            "Suco — consultar sabores",
+            "Cartão personalizado em envelope"
+        ],
+        closing: "Tudo cuidadosamente acomodado em uma caixa de madeira, preparada para transformar o café em um presente especial.",
+        note: "Sabores do bolo e do suco sob consulta."
+    }
     },
     {
     id: 4,
-    name: "Afeto Semente",
-    description: "Pequenos gestos, grandes recomeços.",
-    price: 59.90
+    name: "Caixa Serena",
+    description: "Um presente delicado para lembrar alguém especial de reservar um tempinho para si.",
+    price: 99.90,
+    photos: ["img/caixa-serena1.webp", "img/caixa-serena2.webp"],
+    extendedDescription: {
+        heading: "A caixa acompanha:",
+        items: [
+            "1 sabonete líquido Natura",
+            "2 esmaltes",
+            "2 sachês de chá",
+            "1 Trento",
+            "1 cartão personalizado com o seu recado"
+        ],
+        closing: "Tudo é preparado com carinho e apresentado em uma embalagem especial, pronta para presentear."
+    }
     },
     {
     id: 5,
-    name: "Afeto Florescer",
-    description: "Para quem faz a vida mais bonita.",
-    price: 59.90
+    name: "Caixa Dengo",
+    description: "Um presente para transformar o autocuidado em um momento de carinho e aconchego.",
+    price: 149.90,
+    photos: ["img/caixa-dengo.webp"],
+    badge: "Edição limitada",
+    extendedDescription: {
+        heading: "A caixa acompanha:",
+        items: [
+            "1 mousse de banho",
+            "1 creme hidratante",
+            "2 Ouro Branco, acomodados em um saquinho de juta",
+            "1 cartão personalizado com o seu recado"
+        ],
+        closing: "Tudo preparado com carinho e apresentado em uma embalagem especial, pronta para presentear."
+    }
+    },
+    {
+    id: 6,
+    name: "Caneca Charme",
+    description: "Um mimo cuidadosamente montado e pronto para presentear.",
+    price: 40.00,
+    photos: ["img/caneca-charme1.webp", "img/caneca-charme2.webp"],
+    extendedDescription: {
+        heading: "A Caneca Charme acompanha:",
+        items: [
+            "1 caneca",
+            "1 Kinder Bueno",
+            "1 cappuccino",
+            "1 recadinho personalizado, escrito especialmente para quem você deseja presentear"
+        ],
+        closing: "Tudo é cuidadosamente montado e fechado em uma embalagem bonita, finalizada com laço — pronta para presentear."
+    }
+    },
+    {
+    id: 7,
+    name: "Bolo Querido",
+    description: "Um carinho em forma de bolo.",
+    price: 49.99,
+    photos: ["img/bolo-querido.webp"],
+    extendedDescription: {
+        heading: "",
+        items: [
+            "Bolo artesanal, preparado pela Casa Dorelia e servido em uma caneca especial — um mimo delicioso para adoçar o dia e deixar uma lembrança."
+        ],
+        closing: "Sabores sob consulta."
+    }
+    },
+    {
+    id: 8,
+    name: "Tim-tim",
+    description: "Um mimo delicado para celebrar, brindar e tornar a ocasião ainda mais especial.",
+    price: 94.90,
+    photos: ["img/tim-tim1.webp", "img/tim-tim2.webp"],
+    extendedDescription: {
+        heading: "Nossa composição reúne:",
+        items: [
+            "Taça de champanhe personalizada",
+            "Espumante 187 ml",
+            "Cartão personalizável"
+        ],
+        closing: "Acomodada em uma delicada caixa de acetato, finalizada com laço de cetim."
+    }
     }
 ];
 
@@ -74,11 +187,10 @@ primaryNavigation.querySelectorAll("a").forEach(link => {
 
 function renderProducts() {
     productsGrid.innerHTML = products.map(product => `
-    <article class="product-card">
-        <div class="product-image">
-        <!-- IMAGEM: ${product.name} -->
-        </div>
+    <article class="product-card" data-product-id="${product.id}" ${product.extendedDescription ? 'tabindex="0"' : ""}>
+        ${renderProductCarousel(product)}
         <h3>${product.name}</h3>
+        ${product.badge ? `<p class="product-badge">${product.badge}</p>` : ""}
         <p class="product-description">${product.description}</p>
         <p class="price">${money(product.price)}</p>
         <button class="add-btn" onclick="addToCart(${product.id})">
@@ -87,6 +199,91 @@ function renderProducts() {
     </article>
     `).join("");
 }
+
+function renderProductCarousel(product) {
+    const photos = product.photos || [];
+    const controls = photos.length > 1 ? `
+        <button class="carousel-arrow carousel-previous" type="button" data-direction="-1" aria-label="Foto anterior de ${product.name}">‹</button>
+        <button class="carousel-arrow carousel-next" type="button" data-direction="1" aria-label="Próxima foto de ${product.name}">›</button>
+        <div class="carousel-dots" aria-label="Fotos do produto">
+            ${photos.map((_, index) => `<button type="button" class="carousel-dot${index === 0 ? " is-active" : ""}" data-index="${index}" aria-label="Mostrar foto ${index + 1} de ${product.name}" aria-current="${index === 0 ? "true" : "false"}"></button>`).join("")}
+        </div>
+    ` : "";
+
+    return `<div class="product-image${photos.length ? " has-photos" : ""}" data-product-id="${product.id}" data-photo-index="0">
+        ${photos.length ? `<img src="${photos[0]}" alt="${product.name}" loading="lazy">` : ""}
+        ${controls}
+    </div>`;
+}
+
+const productModal = document.getElementById("productModal");
+const productModalContent = document.getElementById("productModalContent");
+
+function openProductModal(product) {
+    const details = product.extendedDescription;
+    if (!details) return;
+
+    productModalContent.innerHTML = `
+        <div class="product-modal-gallery">${renderProductCarousel(product)}</div>
+        <div class="product-modal-copy">
+            <h2 id="productModalTitle">${product.name}</h2>
+            <p class="product-modal-intro">${product.description}</p>
+            ${details.heading ? `<p><strong>${details.heading}</strong></p>` : ""}
+            <ul>${details.items.map(item => `<li>${item}</li>`).join("")}</ul>
+            <p>${details.closing}</p>
+            ${details.note ? `<p><strong>${details.note}</strong></p>` : ""}
+        </div>
+    `;
+    productModal.showModal();
+}
+
+productsGrid.addEventListener("click", event => {
+    if (event.target.closest("button")) return;
+    const card = event.target.closest(".product-card");
+    if (!card) return;
+    const product = products.find(item => item.id === Number(card.dataset.productId));
+    if (product?.extendedDescription) openProductModal(product);
+});
+
+productsGrid.addEventListener("keydown", event => {
+    if ((event.key !== "Enter" && event.key !== " ") || event.target.closest("button")) return;
+    const card = event.target.closest(".product-card");
+    if (!card) return;
+    event.preventDefault();
+    const product = products.find(item => item.id === Number(card.dataset.productId));
+    if (product?.extendedDescription) openProductModal(product);
+});
+
+document.getElementById("closeProductModal").addEventListener("click", () => productModal.close());
+productModal.addEventListener("click", event => {
+    if (event.target === productModal) productModal.close();
+});
+
+function handleCarouselClick(event) {
+    const control = event.target.closest(".carousel-arrow, .carousel-dot");
+    if (!control) return;
+
+    const carousel = control.closest(".product-image");
+    const product = products.find(item => item.id === Number(carousel.dataset.productId));
+    if (!product || product.photos.length < 2) return;
+
+    const currentIndex = Number(carousel.dataset.photoIndex);
+    const requestedIndex = control.dataset.index === undefined
+        ? currentIndex + Number(control.dataset.direction)
+        : Number(control.dataset.index);
+    const nextIndex = (requestedIndex + product.photos.length) % product.photos.length;
+
+    carousel.dataset.photoIndex = String(nextIndex);
+    carousel.querySelector("img").src = product.photos[nextIndex];
+    carousel.querySelector("img").alt = `${product.name}, foto ${nextIndex + 1}`;
+    carousel.querySelectorAll(".carousel-dot").forEach((dot, index) => {
+        dot.classList.toggle("is-active", index === nextIndex);
+        dot.setAttribute("aria-current", String(index === nextIndex));
+    });
+}
+
+productsGrid.addEventListener("click", handleCarouselClick);
+productModalContent.addEventListener("click", handleCarouselClick);
 
 function addToCart(productId) {
     const item = cart.find(item => item.productId === productId);
@@ -132,7 +329,7 @@ function renderCart() {
         return `
         <div class="cart-item">
             <div class="cart-thumb">
-            <!-- IMAGEM: ${product.name} no carrinho -->
+            ${product.photos?.[0] ? `<img src="${product.photos[0]}" alt="${product.name}" loading="lazy">` : ""}
             </div>
 
             <div>
@@ -146,9 +343,6 @@ function renderCart() {
             </div>
             </div>
 
-            <button class="remove-item" onclick="removeItem(${product.id})" aria-label="Remover">
-            ♡
-            </button>
         </div>
         `;
     }).join("");
