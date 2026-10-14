@@ -316,6 +316,19 @@ function removeItem(productId) {
     renderCart();
 }
 
+function sendToWhatsapp() {
+    if (!cart.length) return;
+
+    const orderLines = cart.map(item => {
+        const product = products.find(product => product.id === item.productId);
+        return `${item.quantity}x ${product.name} — ${money(product.price * item.quantity)}`;
+    });
+    const message = `Olá! Gostaria de fazer este pedido:\n${orderLines.join("\n")}`;
+    const phone = "554888602312";
+
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+}
+
 function renderCart() {
     if (!cart.length) {
     cartItems.innerHTML = `

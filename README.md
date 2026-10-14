@@ -11,7 +11,8 @@ Casa Dorelia webpage
 - [x] Ajustar links para abrir em nova aba
 - [x] Colocar imagens e descrição dos itens
 - [x] Persitencia do carrinho no local storage
-- [ ] Envio do carrinho por wpp
+- [x] Envio do carrinho por wpp
 - [x] Colocar foto dos itens no carrinho
+- [ ] Adicionar últimos itens
 - [x] fav icon
 - [x] build
