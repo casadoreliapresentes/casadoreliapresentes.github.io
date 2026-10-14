@@ -318,6 +318,20 @@ a { color: inherit; text-decoration: none; }
     margin-bottom: 3px;
 }
 
+.product-lines {
+    display: grid;
+    gap: 30px;
+}
+
+.line-title {
+    font-family: var(--serif);
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 13px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+}
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

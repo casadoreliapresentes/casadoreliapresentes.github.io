@@ -2,6 +2,7 @@ const products = [
     // Linha Café
     {
     id: 1,
+    line: "cafe",
     name: "Café Pausa",
     description: "Uma pausa gostosa para presentear, acolher e deixar o dia mais especial.",
     price: 79.90,
@@ -22,6 +23,7 @@ const products = [
     },
     {
     id: 2,
+    line: "cafe",
     name: "Café Aconchego",
     description: "Um presente pensado para criar um momento especial.",
     price: 99.90,
@@ -41,6 +43,7 @@ const products = [
     },
     {
     id: 3,
+    line: "cafe",
     name: "Café Celebração",
     description: "Uma experiência pensada para celebrar momentos que merecem ser lembrados.",
     price: 159.90,
@@ -62,6 +65,7 @@ const products = [
     },
     {
     id: 9,
+    line: "cafe",
     name: "Café Aurora",
     description: "Uma experiência pensada para tornar o início do dia ainda mais especial.",
     price: 109.90,
@@ -82,6 +86,7 @@ const products = [
     // Linha Afeto
     {
     id: 4,
+    line: "afeto",
     name: "Caixa Serena",
     description: "Um presente delicado para lembrar alguém especial de reservar um tempinho para si.",
     price: 99.90,
@@ -100,6 +105,7 @@ const products = [
     },
     {
     id: 5,
+    line: "afeto",
     name: "Caixa Dengo",
     description: "Um presente para transformar o autocuidado em um momento de carinho e aconchego.",
     price: 149.90,
@@ -119,6 +125,7 @@ const products = [
     // Linha Mimos
     {
     id: 6,
+    line: "mimos",
     name: "Caneca Charme",
     description: "Um mimo cuidadosamente montado e pronto para presentear.",
     price: 40.00,
@@ -136,6 +143,7 @@ const products = [
     },
     {
     id: 7,
+    line: "mimos",
     name: "Bolo Querido",
     description: "Um carinho em forma de bolo.",
     price: 49.99,
@@ -150,6 +158,7 @@ const products = [
     },
     {
     id: 8,
+    line: "mimos",
     name: "Tim-tim",
     description: "Um mimo delicado para celebrar, brindar e tornar a ocasião ainda mais especial.",
     price: 94.90,
@@ -166,6 +175,7 @@ const products = [
     },
     {
     id: 10,
+    line: "mimos",
     name: "Caixa Homenagem",
     description: "Uma composição pensada para celebrar, homenagear e proporcionar uma pausa especial — um presente que reúne sabores, cuidado e carinho em cada detalhe.",
     price: 144.90,
@@ -184,6 +194,7 @@ const products = [
     // Adicionais
     {
     id: 11,
+    line: "adicionais",
     name: "Balão Personalizado",
     description: "Um detalhe cheio de amor para transformar o presente em uma verdadeira surpresa! Nosso balão de coração metalizado vem personalizado com o nome ou uma frase curta da sua escolha.",
     price: 11.90,
@@ -241,7 +252,9 @@ primaryNavigation.querySelectorAll("a").forEach(link => {
 });
 
 function renderProducts() {
-    productsGrid.innerHTML = products.map(product => `
+    productsGrid.querySelectorAll("[data-product-line]").forEach(lineGrid => {
+        const lineProducts = products.filter(product => product.line === lineGrid.dataset.productLine);
+        lineGrid.innerHTML = lineProducts.map(product => `
     <article class="product-card" data-product-id="${product.id}" ${product.extendedDescription ? 'tabindex="0"' : ""}>
         ${renderProductCarousel(product)}
         <h3>${product.name}</h3>
@@ -252,7 +265,8 @@ function renderProducts() {
         <span>🛒</span> Adicionar ao carrinho
         </button>
     </article>
-    `).join("");
+        `).join("");
+    });
 }
 
 function renderProductCarousel(product) {
