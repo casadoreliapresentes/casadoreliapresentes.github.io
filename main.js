@@ -1,4 +1,5 @@
 const products = [
+    // Linha Café
     {
     id: 1,
     name: "Café Pausa",
@@ -60,6 +61,26 @@ const products = [
     }
     },
     {
+    id: 9,
+    name: "Café Aurora",
+    description: "Uma experiência pensada para tornar o início do dia ainda mais especial.",
+    price: 109.90,
+    photos: ["img/cafe-aurora.webp"],
+    extendedDescription: {
+        heading: "Nossa composição reúne:",
+        items: [
+            "Biscoito caseiro Casa Dorelia ou bolo individual Casa Dorelia",
+            "Caneca personalizada",
+            "Croissant",
+            "Ferrero Rocher",
+            "Cappuccino em saquinho de juta"
+        ],
+        closing: "Tudo cuidadosamente acomodado em uma caixa de MDF, preparada para transformar um café em um presente especial.",
+        note: "Personalização da caneca sob consulta."
+    }
+    },
+    // Linha Afeto
+    {
     id: 4,
     name: "Caixa Serena",
     description: "Um presente delicado para lembrar alguém especial de reservar um tempinho para si.",
@@ -95,6 +116,7 @@ const products = [
         closing: "Tudo preparado com carinho e apresentado em uma embalagem especial, pronta para presentear."
     }
     },
+    // Linha Mimos
     {
     id: 6,
     name: "Caneca Charme",
@@ -140,6 +162,39 @@ const products = [
             "Cartão personalizável"
         ],
         closing: "Acomodada em uma delicada caixa de acetato, finalizada com laço de cetim."
+    }
+    },
+    {
+    id: 10,
+    name: "Caixa Homenagem",
+    description: "Uma composição pensada para celebrar, homenagear e proporcionar uma pausa especial — um presente que reúne sabores, cuidado e carinho em cada detalhe.",
+    price: 144.90,
+    photos: ["img/homenagem1.webp", "img/homenagem2.webp"],
+    extendedDescription: {
+        heading: "Nossa composição reúne:",
+        items: [
+            "Garrafa fina para celebração",
+            "Taça personalizada",
+            "3 Ferrero Rocher",
+            "Cartão personalizável"
+        ],
+        closing: "Acomodada em uma elegante caixa de MDF, cuidadosamente preparada para presentear."
+    }
+    },
+    // Adicionais
+    {
+    id: 11,
+    name: "Balão Personalizado",
+    description: "Um detalhe cheio de amor para transformar o presente em uma verdadeira surpresa! Nosso balão de coração metalizado vem personalizado com o nome ou uma frase curta da sua escolha.",
+    price: 11.90,
+    photos: ["img/balao.webp"],
+    extendedDescription: {
+        heading: "",
+        items: [
+            "Balão de coração metalizado personalizado com nome ou frase curta."
+        ],
+        closing: "",
+        note: "Cores sob consulta."
     }
     }
 ];
